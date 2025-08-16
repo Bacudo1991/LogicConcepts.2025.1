@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02", "02", "{804DE905-0E0D-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGreathestNumber", "TheGreathestNumber\TheGreathestNumber.csproj", "{21CC1EE9-85BE-41E7-A5B1-24DBC19F7949}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03", "03", "{1F9DAA20-979D-4A90-8CC3-3F20A746AC1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortNumbers", "SortNumbers\SortNumbers.csproj", "{98AE54CC-0925-4824-B4C6-F53BA8424815}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{21CC1EE9-85BE-41E7-A5B1-24DBC19F7949}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21CC1EE9-85BE-41E7-A5B1-24DBC19F7949}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21CC1EE9-85BE-41E7-A5B1-24DBC19F7949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98AE54CC-0925-4824-B4C6-F53BA8424815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98AE54CC-0925-4824-B4C6-F53BA8424815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98AE54CC-0925-4824-B4C6-F53BA8424815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98AE54CC-0925-4824-B4C6-F53BA8424815}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B2973BEA-7BB4-45F4-87DF-88C46DE33035} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{21CC1EE9-85BE-41E7-A5B1-24DBC19F7949} = {804DE905-0E0D-4C73-8D47-683328154F83}
+		{98AE54CC-0925-4824-B4C6-F53BA8424815} = {1F9DAA20-979D-4A90-8CC3-3F20A746AC1D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3B822549-6323-4857-BBA4-BE61DC19CA23}
