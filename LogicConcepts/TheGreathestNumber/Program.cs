@@ -2,7 +2,6 @@
 {
     Console.WriteLine("Ingrese 3 números para saber cual es el mayor (CTRL + C para salir)\n");
 
-    ;
     Console.Write("Ingrese el primer número: ");
     int n1 = int.Parse(Console.ReadLine()!);
     Console.Write("Ingrese el segundo número: ");
