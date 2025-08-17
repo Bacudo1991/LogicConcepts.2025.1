@@ -7,13 +7,6 @@ do
     {
         break;
     }
-    var numberInt = 0;
-    if (int.TryParse(numberString, out numberInt))
-    {
-        if (numberInt % 2 == 0)
-        {
-            Console.WriteLine($"El numero {numberInt}, es par"); // El simbolo de interpolación $ permite incluir variables directamente en la cadena.
-        }
         else
         {
             Console.WriteLine($"El numero {numberInt}, es impar");
