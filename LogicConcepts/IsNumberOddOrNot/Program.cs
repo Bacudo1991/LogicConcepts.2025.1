@@ -8,11 +8,11 @@ do
     var number = ConsoleExtension.GetInt("Ingrese un número entero: ");
     if (number % 2 == 0)
     {
-        Console.WriteLine($"El número {number}, es par.");
+        Console.WriteLine($"El número {number}, es par.\n");
     }
     else
     {
-        Console.WriteLine($"El número {number}, es impar.");
+        Console.WriteLine($"El número {number}, es impar.\n");
     }
 
     do
@@ -22,4 +22,4 @@ do
 
 } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
 
-Console.WriteLine("Game Over.");
+Console.WriteLine("\n:::::: Game Over ::::::\n");

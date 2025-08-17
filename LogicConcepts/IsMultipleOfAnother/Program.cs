@@ -14,15 +14,15 @@ do
 
     if (n2 % n1 == 0)
     { 
-        Console.WriteLine($"{n1} es múltiplo de {n2}\n");
+        Console.WriteLine($"El número {n1}, es múltiplo de {n2}\n");
     }
     else
     {
-        Console.WriteLine($"{n1} no es múltiplo de {n2}.\n");
+        Console.WriteLine($"El número {n1}, no es múltiplo de {n2}.\n");
     }
     do
     {
         answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o ?: ", options);
     } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
 } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
-Console.WriteLine("Game Over.");
+Console.WriteLine("\n:::::: Game Over ::::::");

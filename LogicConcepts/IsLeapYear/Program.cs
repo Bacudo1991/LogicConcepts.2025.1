@@ -35,4 +35,4 @@ do
         answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o ?: ", options);
     } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
 } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
-Console.WriteLine("Game Over.");
+Console.WriteLine("\n:::::: Game Over ::::::\n");
