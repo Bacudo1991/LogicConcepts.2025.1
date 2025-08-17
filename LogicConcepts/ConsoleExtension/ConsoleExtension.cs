@@ -20,9 +20,9 @@
             var answer = Console.ReadLine();
             if (options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)))
             {
-                return answer;
+                return answer!;
             }
-            return null;
+            return null!;
         }
 
     }
