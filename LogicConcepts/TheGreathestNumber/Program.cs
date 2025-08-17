@@ -1,6 +1,11 @@
-﻿do 
+﻿using Shared;
+
+var answer = string.Empty;
+var options = new List<string> { "s", "n" };
+
+do 
 {
-    Console.WriteLine("Ingrese 3 números para saber cual es el mayor (CTRL + C para salir)\n");
+    Console.WriteLine("Ingrese 3 números para saber cual es el mayor\n");
 
     Console.Write("Ingrese el primer número: ");
     int n1 = int.Parse(Console.ReadLine()!);
@@ -30,7 +35,17 @@
     {
         Console.WriteLine("Hay al menos dos números iguales, no se puede determinar un número mayor.");
     }
-} while (true);
+    do
+    {
+        answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o ?: ", options);
+    } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
+} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+
+Console.WriteLine("Game Over.");
+
+
+
+
 
 
 

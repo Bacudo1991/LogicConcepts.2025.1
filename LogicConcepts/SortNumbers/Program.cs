@@ -1,4 +1,9 @@
-﻿do
+﻿using Shared;
+
+var answer = string.Empty;
+var options = new List<string> { "s", "n" };
+
+do
 {
     
     Console.WriteLine(":::::: Ingrese 3 números diferentes ::::::\n");
@@ -48,7 +53,11 @@
             Console.WriteLine($"El mayor es {n3}, el medio es {n2}, el menor es {n1}\n");
         }
     }
-    Console.WriteLine("Si desea salir presione CTRL + C\n");
-} while (true);
+    do
+    {
+        answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o ?: ", options);
+    } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
+} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+Console.WriteLine("Game Over.");
 
 
